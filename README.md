@@ -1,78 +1,101 @@
-🚀 Task Manager App
-A simple Full-Stack Task Manager Application built with:
+# 🧩 Task Manager App
 
-Backend: FastAPI + SQLite
+A **full-stack Task Management application** built using **FastAPI (Backend)** and **React (Frontend)**.  
+It allows users to **add, edit, delete, and mark tasks as completed**, providing a smooth and interactive experience.
 
-Frontend: React.js + TailwindCSS
+---
 
-Features: Add, Edit, Delete, Mark as Completed, Toast notifications, Database support (SQLite/PostgreSQL Ready)
+## 🚀 Features
 
-📂 Project Structure
-task-manager-app/
+✅ Add new tasks  
+✅ Edit existing tasks  
+✅ Delete tasks  
+✅ Mark tasks as completed/uncompleted  
+✅ Toast notifications for actions (add/delete/update)  
+✅ Real database integration using **SQLAlchemy**  
+✅ Fast and responsive frontend built with **React**
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, Axios, Toastify  
+**Backend:** FastAPI, SQLAlchemy, Pydantic  
+**Database:** SQLite (can be replaced with PostgreSQL/MySQL)  
+**Tools:** VS Code, Git, GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+task_manager_app/
 │
 ├── backend/
-│   ├── main.py             # FastAPI app
-│   ├── models.py           # SQLAlchemy models
-│   ├── database.py         # DB connection (SQLite/PostgreSQL)
-│   ├── schemas.py          # Pydantic schemas
-│   └── requirements.txt    # Backend dependencies
+│   ├── main.py
+│   ├── models.py
+│   ├── database.py
+│   └── crud.py
 │
 ├── frontend/
-│   ├── public/
 │   ├── src/
-│   │   ├── App.js          # Main React App
-│   │   ├── index.js
-│   │   └── components/     # (Optional) components like TaskList, TaskForm
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.js
 │   ├── package.json
-│   └── tailwind.config.js
+│   └── public/
 │
 └── README.md
-💡 Features
-✔️ Add New Task
-✔️ Edit Existing Task
-✔️ Delete Task
-✔️ Mark Task as Completed
-✔️ SQLite/PostgreSQL Supported
-✔️ Toast Notifications
-✔️ Clean UI with TailwindCSS
+```
 
-🔧 Tech Stack
-Frontend	Backend	Database
-React.js	FastAPI	SQLite (default) / PostgreSQL Ready
-TailwindCSS	SQLAlchemy	Alembic for migrations
+---
 
-⚙️ Local Setup
-1. Clone this repo:
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/22MH1A4242/task_manager_app.git
 cd task_manager_app
-2. Backend Setup (FastAPI + SQLite):
+```
+
+### 2️⃣ Backend Setup (FastAPI)
+```bash
 cd backend
-python -m venv venv
-venv\Scripts\activate  # for Windows
 pip install -r requirements.txt
 uvicorn main:app --reload
-3.Frontend Setup (React + Tailwind):
+```
+
+### 3️⃣ Frontend Setup (React)
+```bash
 cd frontend
 npm install
 npm start
-Frontend: http://localhost:3000
-Backend: http://127.0.0.1:8000
+```
 
-📦 Build for Production
-cd frontend
-npm run build
+The app will run on **http://localhost:3000/** and the backend on **http://localhost:8000/**.
 
-📝 To-Do (Optional)
- PostgreSQL DB Switch via DATABASE_URL
+---
 
- User Authentication
+## 🧠 Future Enhancements
 
- Deploy on Render/Netlify/Vercel
+- User authentication (JWT)
+- Task filtering and sorting
+- Deadline reminders
+- Dark mode UI
+- Deployment on Render / Vercel
 
-🙏 Acknowledgements
-FastAPI Docs
+---
 
-React Docs
+## 👩‍💻 Developer
 
-TailwindCSS Docs
+**Anjali Devi Medapati**  
+3rd Year CSE (AI/ML) | Backend & AI Developer  
+📧 Email: medapattanjalidevi@gmail.com  
+🌐 GitHub: [22MH1A4242](https://github.com/22MH1A4242)
+
+---
+
+## 🌟 Project Link
+
+🔗 **GitHub Repository:** [Task Manager App](https://github.com/22MH1A4242/task_manager_app)
 
